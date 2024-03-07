@@ -13,9 +13,6 @@ public class Main {
         int result = 0;
 
         for(int i = 1; i<= rounds; i ++) {
-            if (rounds == 1) {
-                continue;
-            }
 
             // A 1 ...
             String input = sc.nextLine();
@@ -24,6 +21,10 @@ public class Main {
 
             if(student.equals("A")) aStudentScore += score;
             if(student.equals("B")) bStudentScore += score;
+
+            if(aStudentScore == 0 && bStudentScore == 0) {
+                continue;
+            }
 
             if(aStudentScore > bStudentScore) hallOfFame = "A";
 
