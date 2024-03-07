@@ -23,6 +23,11 @@ public class Main {
             if(student.equals("B")) bStudentScore += score;
 
             if(aStudentScore == 0 && bStudentScore == 0) {
+                hallOfFame = "";
+                if(!hallOfFame.equals(previousHallOfFame)) {
+                    result++;
+                    previousHallOfFame = hallOfFame;
+                }
                 continue;
             }
 
