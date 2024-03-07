@@ -13,6 +13,9 @@ public class Main {
         int result = 0;
 
         for(int i = 1; i<= rounds; i ++) {
+            if (rounds == 1) {
+                continue;
+            }
 
             // A 1 ...
             String input = sc.nextLine();
